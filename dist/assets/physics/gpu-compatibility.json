@@ -1,0 +1,12 @@
+{
+  "engine": "MuJoCo Warp",
+  "version": "3.13.0",
+  "device": "cuda:0",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "steps": 1,
+  "secondsIncludingJIT": 0.7801253999932669,
+  "finite": true,
+  "maxPositionChange": 0.001569509506225586,
+  "purpose": "Compatibility probe of the exact articulated model, including contacts and planted-foot weld. Production single-shot data uses MuJoCo CPU for latency.",
+  "modelSHA256": "0272a388ab302af1b46cbf030b64ae0dcf1d40fe5316211a892d5a3fe0139f74"
+}

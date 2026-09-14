@@ -1,0 +1,55 @@
+{
+  "render_engine": "Cycles",
+  "render_devices": [
+    {
+      "device": "NVIDIA RTX PRO 6000",
+      "backend": "OptiX",
+      "denoiser": "OptiX GPU",
+      "frames": 132,
+      "frame_ranges": [
+        [
+          3,
+          85
+        ],
+        [
+          192,
+          240
+        ]
+      ]
+    },
+    {
+      "device": "Mac Studio M3 Ultra",
+      "backend": "MetalRT",
+      "denoiser": "OpenImageDenoise GPU",
+      "frames": 108,
+      "frame_ranges": [
+        [
+          1,
+          2
+        ],
+        [
+          86,
+          191
+        ]
+      ]
+    }
+  ],
+  "samples": 24,
+  "adaptive_threshold": 0.035,
+  "frames": 240,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "duration": 10.0,
+  "encode_and_validation_seconds": 8.87,
+  "full_decode_pass": true,
+  "floor_color_audit_pass": true,
+  "video_sha256": "1fd54e3221d1f6d40716ea89335d9c9dc0e505ecb0438eda410981dad5647937",
+  "video_bytes": 2350128,
+  "hero_frame": 167,
+  "hero_source_seconds": 88.8232,
+  "source_contact_seconds": 88.822067,
+  "analytical_overlay": "True 3D joints and relative velocities, composited through the ray-traced surface."
+}

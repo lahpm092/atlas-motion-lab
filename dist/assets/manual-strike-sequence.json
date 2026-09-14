@@ -1,0 +1,1077 @@
+{
+  "schema": "atlas-manual-strike-sequence-v1",
+  "source_file": "atlas-quinones-pachuca-2022-source.mp4",
+  "source_url": "https://www.youtube.com/watch?v=y4dl3bDOxYI",
+  "player": "Julián Quiñones, Atlas #33",
+  "coordinate_space": {
+    "width": 1280,
+    "height": 720,
+    "origin": "top-left",
+    "axes": "x right, y down"
+  },
+  "frame_selection": "Exact zero-based decoded frame index via ffmpeg select eq(n,N), not timestamp seeking. Full original1280x720 source used.",
+  "frame_range": [
+    2655,
+    2670
+  ],
+  "fps": [
+    30000,
+    1001
+  ],
+  "clip_source_start": 80.8,
+  "annotation_method": "Direct visual inspection of all16 consecutive frames with source crops; each target was drawn back on its own crop and visually checked. No interpolation of hidden landmarks. Coordinates are approximate visible-feature proxies for internal anatomical joints.",
+  "identity_correction": {
+    "source_frame": 2662,
+    "rejected_right_wrist": [
+      611,
+      248
+    ],
+    "reason": "This hanging arm connects to the defender white/blue sleeve, not Quiñones. Quiñones right arm is dark and extends horizontally across the defender torso.",
+    "verified_target_right_wrist": [
+      545,
+      208
+    ],
+    "uncertainty_px": 8,
+    "identity_quality": "high",
+    "evidence": "identity-check-2662.jpg"
+  },
+  "crop_transforms": {
+    "rw": {
+      "source_crop": [
+        450,
+        120,
+        200,
+        160
+      ],
+      "scale": 3,
+      "tile_size": [
+        600,
+        480
+      ],
+      "grid": [
+        2,
+        2
+      ]
+    },
+    "ankles": {
+      "source_crop": [
+        540,
+        300,
+        400,
+        340
+      ],
+      "scale": 1.5,
+      "tile_size": [
+        600,
+        510
+      ],
+      "grid": [
+        2,
+        2
+      ]
+    }
+  },
+  "usage": [
+    "Targets are image-plane estimates, not measured3D joints.",
+    "Keep absent targets unchanged from model; do not silently fill nulls or present interpolated values as observations.",
+    "For IK use original model depth/limb constraints; label correction as an estimated2D-guided adjustment.",
+    "Pixel tolerances are visual uncertainty, not statistically calibrated accuracy.",
+    "Replay is slow motion; do not infer real-world velocities from source timestamps."
+  ],
+  "frames": [
+    {
+      "source_frame": 2655,
+      "source_time": 88.5885,
+      "clip_time": 7.7885,
+      "joints": {
+        "right_wrist": {
+          "x": 509,
+          "y": 200,
+          "target": [
+            509,
+            200
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2655-2658.jpg",
+            "overlay": "preview-rw-2655-2658.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 667,
+          "y": 547,
+          "target": [
+            667,
+            547
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2655-2658.jpg",
+            "overlay": "preview-ankles-2655-2658.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Bent leg and own thigh obscure ankle/cuff; shoe fragment is insufficient to locate center.",
+          "evidence": {
+            "file": "ankles-2655-2658.jpg",
+            "overlay": "preview-ankles-2655-2658.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2656,
+      "source_time": 88.621867,
+      "clip_time": 7.821867,
+      "joints": {
+        "right_wrist": {
+          "x": 515,
+          "y": 202,
+          "target": [
+            515,
+            202
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2655-2658.jpg",
+            "overlay": "preview-rw-2655-2658.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 680,
+          "y": 555,
+          "target": [
+            680,
+            555
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2655-2658.jpg",
+            "overlay": "preview-ankles-2655-2658.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Own bent leg obscures ankle joint; no target inferred.",
+          "evidence": {
+            "file": "ankles-2655-2658.jpg",
+            "overlay": "preview-ankles-2655-2658.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2657,
+      "source_time": 88.655233,
+      "clip_time": 7.855233,
+      "joints": {
+        "right_wrist": {
+          "x": 524,
+          "y": 207,
+          "target": [
+            524,
+            207
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2655-2658.jpg",
+            "overlay": "preview-rw-2655-2658.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 686,
+          "y": 556,
+          "target": [
+            686,
+            556
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2655-2658.jpg",
+            "overlay": "preview-ankles-2655-2658.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 789,
+          "y": 425,
+          "target": [
+            789,
+            425
+          ],
+          "visibility": "partially_visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2655-2658.jpg",
+            "overlay": "preview-ankles-2655-2658.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2658,
+      "source_time": 88.6886,
+      "clip_time": 7.8886,
+      "joints": {
+        "right_wrist": {
+          "x": 527,
+          "y": 207,
+          "target": [
+            527,
+            207
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2655-2658.jpg",
+            "overlay": "preview-rw-2655-2658.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 688,
+          "y": 553,
+          "target": [
+            688,
+            553
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2655-2658.jpg",
+            "overlay": "preview-ankles-2655-2658.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 806,
+          "y": 448,
+          "target": [
+            806,
+            448
+          ],
+          "visibility": "partially_visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2655-2658.jpg",
+            "overlay": "preview-ankles-2655-2658.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2659,
+      "source_time": 88.721967,
+      "clip_time": 7.921967,
+      "joints": {
+        "right_wrist": {
+          "x": 530,
+          "y": 208,
+          "target": [
+            530,
+            208
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2659-2662.jpg",
+            "overlay": "preview-rw-2659-2662.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 686,
+          "y": 550,
+          "target": [
+            686,
+            550
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2659-2662.jpg",
+            "overlay": "preview-ankles-2659-2662.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 808,
+          "y": 472,
+          "target": [
+            808,
+            472
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2659-2662.jpg",
+            "overlay": "preview-ankles-2659-2662.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2660,
+      "source_time": 88.755333,
+      "clip_time": 7.955333,
+      "joints": {
+        "right_wrist": {
+          "x": 534,
+          "y": 207,
+          "target": [
+            534,
+            207
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2659-2662.jpg",
+            "overlay": "preview-rw-2659-2662.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 686,
+          "y": 548,
+          "target": [
+            686,
+            548
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2659-2662.jpg",
+            "overlay": "preview-ankles-2659-2662.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 817,
+          "y": 502,
+          "target": [
+            817,
+            502
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2659-2662.jpg",
+            "overlay": "preview-ankles-2659-2662.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2661,
+      "source_time": 88.7887,
+      "clip_time": 7.9887,
+      "joints": {
+        "right_wrist": {
+          "x": 536,
+          "y": 210,
+          "target": [
+            536,
+            210
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2659-2662.jpg",
+            "overlay": "preview-rw-2659-2662.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 683,
+          "y": 545,
+          "target": [
+            683,
+            545
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2659-2662.jpg",
+            "overlay": "preview-ankles-2659-2662.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 812,
+          "y": 518,
+          "target": [
+            812,
+            518
+          ],
+          "visibility": "partially_visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2659-2662.jpg",
+            "overlay": "preview-ankles-2659-2662.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2662,
+      "source_time": 88.822067,
+      "clip_time": 8.022067,
+      "joints": {
+        "right_wrist": {
+          "x": 545,
+          "y": 208,
+          "target": [
+            545,
+            208
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2659-2662.jpg",
+            "overlay": "preview-rw-2659-2662.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 679,
+          "y": 547,
+          "target": [
+            679,
+            547
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2659-2662.jpg",
+            "overlay": "preview-ankles-2659-2662.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Ball obscures ankle/boot junction at contact.",
+          "evidence": {
+            "file": "ankles-2659-2662.jpg",
+            "overlay": "preview-ankles-2659-2662.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2663,
+      "source_time": 88.855433,
+      "clip_time": 8.055433,
+      "joints": {
+        "right_wrist": {
+          "x": 542,
+          "y": 210,
+          "target": [
+            542,
+            210
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2663-2666.jpg",
+            "overlay": "preview-rw-2663-2666.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 674,
+          "y": 538,
+          "target": [
+            674,
+            538
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 4,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2663-2666.jpg",
+            "overlay": "preview-ankles-2663-2666.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Ball obscures ankle/boot junction.",
+          "evidence": {
+            "file": "ankles-2663-2666.jpg",
+            "overlay": "preview-ankles-2663-2666.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2664,
+      "source_time": 88.8888,
+      "clip_time": 8.0888,
+      "joints": {
+        "right_wrist": {
+          "x": 548,
+          "y": 203,
+          "target": [
+            548,
+            203
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2663-2666.jpg",
+            "overlay": "preview-rw-2663-2666.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Ball covers ankle/cuff center.",
+          "evidence": {
+            "file": "ankles-2663-2666.jpg",
+            "overlay": "preview-ankles-2663-2666.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 756,
+          "y": 498,
+          "target": [
+            756,
+            498
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2663-2666.jpg",
+            "overlay": "preview-ankles-2663-2666.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2665,
+      "source_time": 88.922167,
+      "clip_time": 8.122167,
+      "joints": {
+        "right_wrist": {
+          "x": 545,
+          "y": 202,
+          "target": [
+            545,
+            202
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2663-2666.jpg",
+            "overlay": "preview-rw-2663-2666.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 662,
+          "y": 529,
+          "target": [
+            662,
+            529
+          ],
+          "visibility": "partially_visible",
+          "status": "estimated",
+          "uncertainty_px": 7,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2663-2666.jpg",
+            "overlay": "preview-ankles-2663-2666.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 732,
+          "y": 469,
+          "target": [
+            732,
+            469
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2663-2666.jpg",
+            "overlay": "preview-ankles-2663-2666.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2666,
+      "source_time": 88.955533,
+      "clip_time": 8.155533,
+      "joints": {
+        "right_wrist": {
+          "x": 556,
+          "y": 193,
+          "target": [
+            556,
+            193
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 8,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2663-2666.jpg",
+            "overlay": "preview-rw-2663-2666.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Defender shoe crosses and obscures support ankle center.",
+          "evidence": {
+            "file": "ankles-2663-2666.jpg",
+            "overlay": "preview-ankles-2663-2666.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 712,
+          "y": 451,
+          "target": [
+            712,
+            451
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2663-2666.jpg",
+            "overlay": "preview-ankles-2663-2666.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2667,
+      "source_time": 88.9889,
+      "clip_time": 8.1889,
+      "joints": {
+        "right_wrist": {
+          "x": 565,
+          "y": 186,
+          "target": [
+            565,
+            186
+          ],
+          "visibility": "partially_visible",
+          "status": "estimated",
+          "uncertainty_px": 10,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2667-2670.jpg",
+            "overlay": "preview-rw-2667-2670.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Defender shoe overlaps support ankle.",
+          "evidence": {
+            "file": "ankles-2667-2670.jpg",
+            "overlay": "preview-ankles-2667-2670.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 695,
+          "y": 435,
+          "target": [
+            695,
+            435
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2667-2670.jpg",
+            "overlay": "preview-ankles-2667-2670.jpg",
+            "tile_index": 0,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2668,
+      "source_time": 89.022267,
+      "clip_time": 8.222267,
+      "joints": {
+        "right_wrist": {
+          "x": 571,
+          "y": 185,
+          "target": [
+            571,
+            185
+          ],
+          "visibility": "partially_visible",
+          "status": "estimated",
+          "uncertainty_px": 10,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2667-2670.jpg",
+            "overlay": "preview-rw-2667-2670.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Defender shoe/leg obscures support ankle.",
+          "evidence": {
+            "file": "ankles-2667-2670.jpg",
+            "overlay": "preview-ankles-2667-2670.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 675,
+          "y": 430,
+          "target": [
+            675,
+            430
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2667-2670.jpg",
+            "overlay": "preview-ankles-2667-2670.jpg",
+            "tile_index": 1,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2669,
+      "source_time": 89.055633,
+      "clip_time": 8.255633,
+      "joints": {
+        "right_wrist": {
+          "x": 572,
+          "y": 193,
+          "target": [
+            572,
+            193
+          ],
+          "visibility": "partially_visible",
+          "status": "estimated",
+          "uncertainty_px": 10,
+          "usable_for_ik": true,
+          "note": "Approximate center of visible hand/forearm junction; identifies Quiñones dark arm crossing defender torso.",
+          "evidence": {
+            "file": "rw-2667-2670.jpg",
+            "overlay": "preview-rw-2667-2670.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": 610,
+          "y": 498,
+          "target": [
+            610,
+            498
+          ],
+          "visibility": "partially_visible",
+          "status": "estimated",
+          "uncertainty_px": 7,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2667-2670.jpg",
+            "overlay": "preview-ankles-2667-2670.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 657,
+          "y": 432,
+          "target": [
+            657,
+            432
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2667-2670.jpg",
+            "overlay": "preview-ankles-2667-2670.jpg",
+            "tile_index": 2,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    },
+    {
+      "source_frame": 2670,
+      "source_time": 89.089,
+      "clip_time": 8.289,
+      "joints": {
+        "right_wrist": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Wrist junction reaches defender sleeve/arm occlusion; hand remains partly visible but center is not reliably separable.",
+          "evidence": {
+            "file": "rw-2667-2670.jpg",
+            "overlay": "preview-rw-2667-2670.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "right_ankle": {
+          "x": null,
+          "y": null,
+          "target": null,
+          "visibility": "occluded",
+          "status": "unavailable",
+          "uncertainty_px": null,
+          "usable_for_ik": false,
+          "note": "Support ankle is obscured by crossing legs and shoe.",
+          "evidence": {
+            "file": "ankles-2667-2670.jpg",
+            "overlay": "preview-ankles-2667-2670.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        },
+        "left_ankle": {
+          "x": 640,
+          "y": 437,
+          "target": [
+            640,
+            437
+          ],
+          "visibility": "visible",
+          "status": "estimated",
+          "uncertainty_px": 6,
+          "usable_for_ik": true,
+          "note": "Approximate ankle center from visible sock/boot collar; anatomical center is a visual estimate, not a directly visible internal joint.",
+          "evidence": {
+            "file": "ankles-2667-2670.jpg",
+            "overlay": "preview-ankles-2667-2670.jpg",
+            "tile_index": 3,
+            "tile_order": "left-to-right then top-to-bottom"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1278 @@
+{
+  "schema": "atlas-ball-sam31-v2",
+  "source": "https://www.youtube.com/watch?v=y4dl3bDOxYI",
+  "frame_selection": "Independent SAM inference on every source frame 2637–2670 (34 frames), plus partly visible ball at 2679. Frames 2671–2678 remain absent.",
+  "model": "SAM 3.1 MLX, 4-bit affine checkpoint, 384 px input crops",
+  "actual_mask_model_executed": true,
+  "manual_support": "The13original manual center/radius annotations guide the crops. Crop centers/radii are interpolated only to locate each intermediate crop. Interpolated crop guides are not observations. Every saved silhouette comes from an independent SAM3.1 prediction.",
+  "samples": [
+    {
+      "sourceFrame": 2637,
+      "sourceTime": 87.9879,
+      "clipTime": 7.1738333333333335,
+      "clipFrame": 215,
+      "roiGuideCenter": [
+        540,
+        566
+      ],
+      "roiGuideRadius": 40,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        540,
+        566
+      ],
+      "manualRadius": 40,
+      "crop": [
+        420,
+        446,
+        660,
+        686
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02637_ball.png",
+      "score": 0.9106654524803162,
+      "area": 4716,
+      "centroid": [
+        540.1240458015267,
+        569.7222222222222
+      ],
+      "areaToManualCircleRatio": 0.938218389526723,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2638,
+      "sourceTime": 88.02126666666666,
+      "clipTime": 7.2072,
+      "clipFrame": 216,
+      "roiGuideCenter": [
+        545,
+        565
+      ],
+      "roiGuideRadius": 40.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        425,
+        445,
+        665,
+        685
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02638_ball.png",
+      "score": 0.9209713935852051,
+      "area": 4725,
+      "centroid": [
+        545.2764021164021,
+        568.2791534391534
+      ],
+      "areaToManualCircleRatio": 0.9400088826365068,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2639,
+      "sourceTime": 88.05463333333333,
+      "clipTime": 7.240566666666667,
+      "clipFrame": 217,
+      "roiGuideCenter": [
+        549,
+        563
+      ],
+      "roiGuideRadius": 40.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        429,
+        443,
+        669,
+        683
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02639_ball.png",
+      "score": 0.9341158270835876,
+      "area": 4931,
+      "centroid": [
+        549.8193064287162,
+        567.2151693368485
+      ],
+      "areaToManualCircleRatio": 0.9809912804826699,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2640,
+      "sourceTime": 88.088,
+      "clipTime": 7.273933333333333,
+      "clipFrame": 218,
+      "roiGuideCenter": [
+        554,
+        562
+      ],
+      "roiGuideRadius": 40,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        554,
+        562
+      ],
+      "manualRadius": 40,
+      "crop": [
+        434,
+        442,
+        674,
+        682
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02640_ball.png",
+      "score": 0.9397050142288208,
+      "area": 4996,
+      "centroid": [
+        555.9343474779824,
+        566.4185348278623
+      ],
+      "areaToManualCircleRatio": 0.9939226196088864,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2641,
+      "sourceTime": 88.12136666666666,
+      "clipTime": 7.3073,
+      "clipFrame": 219,
+      "roiGuideCenter": [
+        563,
+        562
+      ],
+      "roiGuideRadius": 40.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        443,
+        442,
+        683,
+        682
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02641_ball.png",
+      "score": 0.9040367603302002,
+      "area": 4778,
+      "centroid": [
+        562.8555881121808,
+        566.104018417748
+      ],
+      "areaToManualCircleRatio": 0.9505528976163449,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2642,
+      "sourceTime": 88.15473333333334,
+      "clipTime": 7.3406666666666665,
+      "clipFrame": 220,
+      "roiGuideCenter": [
+        571,
+        562
+      ],
+      "roiGuideRadius": 40.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        451,
+        442,
+        691,
+        682
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02642_ball.png",
+      "score": 0.9204837083816528,
+      "area": 5014,
+      "centroid": [
+        572.4373753490228,
+        565.6296370163542
+      ],
+      "areaToManualCircleRatio": 0.997503605828454,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2643,
+      "sourceTime": 88.1881,
+      "clipTime": 7.374033333333333,
+      "clipFrame": 221,
+      "roiGuideCenter": [
+        580,
+        562
+      ],
+      "roiGuideRadius": 40,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        580,
+        562
+      ],
+      "manualRadius": 40,
+      "crop": [
+        460,
+        442,
+        700,
+        682
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02643_ball.png",
+      "score": 0.9199657440185547,
+      "area": 4672,
+      "centroid": [
+        582.1264982876712,
+        565.0717037671233
+      ],
+      "areaToManualCircleRatio": 0.9294648676566688,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2644,
+      "sourceTime": 88.22146666666667,
+      "clipTime": 7.4074,
+      "clipFrame": 222,
+      "roiGuideCenter": [
+        592,
+        564
+      ],
+      "roiGuideRadius": 39.666666666666664,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        473,
+        445,
+        711,
+        683
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02644_ball.png",
+      "score": 0.9326547384262085,
+      "area": 4675,
+      "centroid": [
+        593.5833155080214,
+        566.979679144385
+      ],
+      "areaToManualCircleRatio": 0.9457586654320312,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2645,
+      "sourceTime": 88.25483333333334,
+      "clipTime": 7.440766666666667,
+      "clipFrame": 223,
+      "roiGuideCenter": [
+        604,
+        566
+      ],
+      "roiGuideRadius": 39.333333333333336,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        486,
+        448,
+        722,
+        684
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02645_ball.png",
+      "score": 0.9262650609016418,
+      "area": 4635,
+      "centroid": [
+        607.697950377562,
+        569.4453074433657
+      ],
+      "areaToManualCircleRatio": 0.9536266088880228,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2646,
+      "sourceTime": 88.2882,
+      "clipTime": 7.4741333333333335,
+      "clipFrame": 224,
+      "roiGuideCenter": [
+        616,
+        568
+      ],
+      "roiGuideRadius": 39,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        616,
+        568
+      ],
+      "manualRadius": 39,
+      "crop": [
+        499,
+        451,
+        733,
+        685
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02646_ball.png",
+      "score": 0.9419528841972351,
+      "area": 4817,
+      "centroid": [
+        618.8432634419763,
+        572.5870873987959
+      ],
+      "areaToManualCircleRatio": 1.0080859446070478,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2647,
+      "sourceTime": 88.32156666666667,
+      "clipTime": 7.5075,
+      "clipFrame": 225,
+      "roiGuideCenter": [
+        632,
+        567
+      ],
+      "roiGuideRadius": 39.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        515,
+        450,
+        749,
+        684
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02647_ball.png",
+      "score": 0.90965735912323,
+      "area": 4385,
+      "centroid": [
+        633.2216647662485,
+        571.9306727480046
+      ],
+      "areaToManualCircleRatio": 0.9176784029690481,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2648,
+      "sourceTime": 88.35493333333334,
+      "clipTime": 7.540866666666667,
+      "clipFrame": 226,
+      "roiGuideCenter": [
+        648,
+        567
+      ],
+      "roiGuideRadius": 39.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        531,
+        450,
+        765,
+        684
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02648_ball.png",
+      "score": 0.9233160018920898,
+      "area": 4546,
+      "centroid": [
+        650.6225252969643,
+        570.4201495820502
+      ],
+      "areaToManualCircleRatio": 0.9513719543665434,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2649,
+      "sourceTime": 88.3883,
+      "clipTime": 7.574233333333333,
+      "clipFrame": 227,
+      "roiGuideCenter": [
+        664,
+        566
+      ],
+      "roiGuideRadius": 39,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        664,
+        566
+      ],
+      "manualRadius": 39,
+      "crop": [
+        547,
+        449,
+        781,
+        683
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02649_ball.png",
+      "score": 0.9403170943260193,
+      "area": 4739,
+      "centroid": [
+        664.0040092846592,
+        567.5366110993881
+      ],
+      "areaToManualCircleRatio": 0.9917623607001869,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2650,
+      "sourceTime": 88.42166666666667,
+      "clipTime": 7.6076,
+      "clipFrame": 228,
+      "roiGuideCenter": [
+        679,
+        563
+      ],
+      "roiGuideRadius": 39.333333333333336,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        561,
+        445,
+        797,
+        681
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02650_ball.png",
+      "score": 0.8879308700561523,
+      "area": 4556,
+      "centroid": [
+        680.8064091308165,
+        567.5114135206321
+      ],
+      "areaToManualCircleRatio": 0.9373727788767706,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2651,
+      "sourceTime": 88.45503333333333,
+      "clipTime": 7.6409666666666665,
+      "clipFrame": 229,
+      "roiGuideCenter": [
+        695,
+        559
+      ],
+      "roiGuideRadius": 39.666666666666664,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        576,
+        440,
+        814,
+        678
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02651_ball.png",
+      "score": 0.9306710958480835,
+      "area": 4825,
+      "centroid": [
+        696.0449740932643,
+        563.7566839378238
+      ],
+      "areaToManualCircleRatio": 0.9761038632533798,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2652,
+      "sourceTime": 88.4884,
+      "clipTime": 7.674333333333333,
+      "clipFrame": 230,
+      "roiGuideCenter": [
+        710,
+        556
+      ],
+      "roiGuideRadius": 40,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        710,
+        556
+      ],
+      "manualRadius": 40,
+      "crop": [
+        590,
+        436,
+        830,
+        676
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02652_ball.png",
+      "score": 0.9362563490867615,
+      "area": 4851,
+      "centroid": [
+        712.3145743145743,
+        561.3656977942692
+      ],
+      "areaToManualCircleRatio": 0.9650757861734803,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2653,
+      "sourceTime": 88.52176666666666,
+      "clipTime": 7.7077,
+      "clipFrame": 231,
+      "roiGuideCenter": [
+        722,
+        556
+      ],
+      "roiGuideRadius": 39.333333333333336,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        604,
+        438,
+        840,
+        674
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02653_ball.png",
+      "score": 0.9302436113357544,
+      "area": 4768,
+      "centroid": [
+        724.7244127516778,
+        559.0897651006711
+      ],
+      "areaToManualCircleRatio": 0.9809906518183586,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2654,
+      "sourceTime": 88.55513333333333,
+      "clipTime": 7.741066666666667,
+      "clipFrame": 232,
+      "roiGuideCenter": [
+        734,
+        556
+      ],
+      "roiGuideRadius": 38.666666666666664,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        618,
+        440,
+        850,
+        672
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02654_ball.png",
+      "score": 0.933224618434906,
+      "area": 4565,
+      "centroid": [
+        739.3991237677984,
+        558.4867469879518
+      ],
+      "areaToManualCircleRatio": 0.9718907308160704,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2655,
+      "sourceTime": 88.5885,
+      "clipTime": 7.7744333333333335,
+      "clipFrame": 233,
+      "roiGuideCenter": [
+        746,
+        556
+      ],
+      "roiGuideRadius": 38,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        746,
+        556
+      ],
+      "manualRadius": 38,
+      "crop": [
+        632,
+        442,
+        860,
+        670
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02655_ball.png",
+      "score": 0.9295371770858765,
+      "area": 4678,
+      "centroid": [
+        748.211201368106,
+        558.0089781958102
+      ],
+      "areaToManualCircleRatio": 1.0312005869582914,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2656,
+      "sourceTime": 88.62186666666666,
+      "clipTime": 7.8078,
+      "clipFrame": 234,
+      "roiGuideCenter": [
+        753,
+        554
+      ],
+      "roiGuideRadius": 38.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        639,
+        440,
+        867,
+        668
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02656_ball.png",
+      "score": 0.9210559129714966,
+      "area": 4472,
+      "centroid": [
+        756.6498211091234,
+        556.8387745974956
+      ],
+      "areaToManualCircleRatio": 0.9857907278489696,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2657,
+      "sourceTime": 88.65523333333333,
+      "clipTime": 7.841166666666667,
+      "clipFrame": 235,
+      "roiGuideCenter": [
+        761,
+        552
+      ],
+      "roiGuideRadius": 38.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        647,
+        438,
+        875,
+        666
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02657_ball.png",
+      "score": 0.9158938527107239,
+      "area": 4378,
+      "centroid": [
+        764.6891274554591,
+        556.3471904979442
+      ],
+      "areaToManualCircleRatio": 0.9650697241777256,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2658,
+      "sourceTime": 88.6886,
+      "clipTime": 7.874533333333333,
+      "clipFrame": 236,
+      "roiGuideCenter": [
+        768,
+        550
+      ],
+      "roiGuideRadius": 38,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        768,
+        550
+      ],
+      "manualRadius": 38,
+      "crop": [
+        654,
+        436,
+        882,
+        664
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02658_ball.png",
+      "score": 0.9387813806533813,
+      "area": 4589,
+      "centroid": [
+        770.7110481586402,
+        553.0274569623011
+      ],
+      "areaToManualCircleRatio": 1.0115817643333902,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2659,
+      "sourceTime": 88.72196666666666,
+      "clipTime": 7.9079,
+      "clipFrame": 237,
+      "roiGuideCenter": [
+        771,
+        548
+      ],
+      "roiGuideRadius": 38.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        657,
+        434,
+        885,
+        662
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02659_ball.png",
+      "score": 0.9409423470497131,
+      "area": 4588,
+      "centroid": [
+        774.8894943330428,
+        550.6220575414123
+      ],
+      "areaToManualCircleRatio": 1.0113613281241218,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2660,
+      "sourceTime": 88.75533333333334,
+      "clipTime": 7.9412666666666665,
+      "clipFrame": 238,
+      "roiGuideCenter": [
+        775,
+        546
+      ],
+      "roiGuideRadius": 38.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        661,
+        432,
+        889,
+        660
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02660_ball.png",
+      "score": 0.9040130376815796,
+      "area": 4230,
+      "centroid": [
+        778.9959810874705,
+        547.641134751773
+      ],
+      "areaToManualCircleRatio": 0.9324451652059798,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2661,
+      "sourceTime": 88.7887,
+      "clipTime": 7.974633333333333,
+      "clipFrame": 239,
+      "roiGuideCenter": [
+        778,
+        544
+      ],
+      "roiGuideRadius": 38,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        778,
+        544
+      ],
+      "manualRadius": 38,
+      "crop": [
+        664,
+        430,
+        892,
+        658
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02661_ball.png",
+      "score": 0.9295529127120972,
+      "area": 4451,
+      "centroid": [
+        781.3037519658503,
+        545.8018422826331
+      ],
+      "areaToManualCircleRatio": 0.9811615674543299,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2662,
+      "sourceTime": 88.82206666666667,
+      "clipTime": 8.008,
+      "clipFrame": 240,
+      "roiGuideCenter": [
+        751,
+        532
+      ],
+      "roiGuideRadius": 38.666666666666664,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        635,
+        416,
+        867,
+        648
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02662_ball.png",
+      "score": 0.929931104183197,
+      "area": 4298,
+      "centroid": [
+        784.8538855281527,
+        543.7568636575152
+      ],
+      "areaToManualCircleRatio": 0.9150463003389858,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2663,
+      "sourceTime": 88.85543333333334,
+      "clipTime": 8.041366666666667,
+      "clipFrame": 241,
+      "roiGuideCenter": [
+        723,
+        520
+      ],
+      "roiGuideRadius": 39.333333333333336,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        605,
+        402,
+        841,
+        638
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02663_ball.png",
+      "score": 0.9142397046089172,
+      "area": 3978,
+      "centroid": [
+        763.1458019105078,
+        533.5354449472096
+      ],
+      "areaToManualCircleRatio": 0.818452351705837,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2664,
+      "sourceTime": 88.8888,
+      "clipTime": 8.074733333333333,
+      "clipFrame": 242,
+      "roiGuideCenter": [
+        696,
+        508
+      ],
+      "roiGuideRadius": 40,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        696,
+        508
+      ],
+      "manualRadius": 40,
+      "crop": [
+        576,
+        388,
+        816,
+        628
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02664_ball.png",
+      "score": 0.9319995641708374,
+      "area": 4073,
+      "centroid": [
+        694.653572305426,
+        510.4485637122514
+      ],
+      "areaToManualCircleRatio": 0.8102976040166121,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2665,
+      "sourceTime": 88.92216666666667,
+      "clipTime": 8.1081,
+      "clipFrame": 243,
+      "roiGuideCenter": [
+        632,
+        487
+      ],
+      "roiGuideRadius": 40.666666666666664,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        510,
+        365,
+        754,
+        609
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02665_ball.png",
+      "score": 0.9256383180618286,
+      "area": 4264,
+      "centroid": [
+        636.6189024390244,
+        492.25257973733585
+      ],
+      "areaToManualCircleRatio": 0.820710843334396,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2666,
+      "sourceTime": 88.95553333333334,
+      "clipTime": 8.141466666666666,
+      "clipFrame": 244,
+      "roiGuideCenter": [
+        568,
+        467
+      ],
+      "roiGuideRadius": 41.333333333333336,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        444,
+        343,
+        692,
+        591
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02666_ball.png",
+      "score": 0.9109115600585938,
+      "area": 4359,
+      "centroid": [
+        566.4927735719201,
+        468.7423721036935
+      ],
+      "areaToManualCircleRatio": 0.8121497882984061,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2667,
+      "sourceTime": 88.9889,
+      "clipTime": 8.174833333333334,
+      "clipFrame": 245,
+      "roiGuideCenter": [
+        504,
+        446
+      ],
+      "roiGuideRadius": 42,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        504,
+        446
+      ],
+      "manualRadius": 42,
+      "crop": [
+        378,
+        320,
+        630,
+        572
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02667_ball.png",
+      "score": 0.9425079822540283,
+      "area": 4717,
+      "centroid": [
+        505.3684545261819,
+        450.8373966504134
+      ],
+      "areaToManualCircleRatio": 0.8511721843134583,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2668,
+      "sourceTime": 89.02226666666667,
+      "clipTime": 8.2082,
+      "clipFrame": 246,
+      "roiGuideCenter": [
+        442,
+        430
+      ],
+      "roiGuideRadius": 42.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        316,
+        304,
+        568,
+        556
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02668_ball.png",
+      "score": 0.9351344108581543,
+      "area": 4678,
+      "centroid": [
+        433.9029499786233,
+        428.9572466866182
+      ],
+      "areaToManualCircleRatio": 0.8441347208434085,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2669,
+      "sourceTime": 89.05563333333333,
+      "clipTime": 8.241566666666667,
+      "clipFrame": 247,
+      "roiGuideCenter": [
+        380,
+        414
+      ],
+      "roiGuideRadius": 42.0,
+      "roiGuideInterpolated": true,
+      "manualCenter": null,
+      "manualRadius": null,
+      "crop": [
+        254,
+        288,
+        506,
+        540
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02669_ball.png",
+      "score": 0.9246623516082764,
+      "area": 4755,
+      "centroid": [
+        371.131650893796,
+        412.87549947423764
+      ],
+      "areaToManualCircleRatio": 0.8580292000022248,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2670,
+      "sourceTime": 89.089,
+      "clipTime": 8.274933333333333,
+      "clipFrame": 248,
+      "roiGuideCenter": [
+        318,
+        398
+      ],
+      "roiGuideRadius": 42,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        318,
+        398
+      ],
+      "manualRadius": 42,
+      "crop": [
+        192,
+        272,
+        444,
+        524
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02670_ball.png",
+      "score": 0.9445210099220276,
+      "area": 4875,
+      "centroid": [
+        317.4756923076923,
+        396.75753846153845
+      ],
+      "areaToManualCircleRatio": 0.8796829337562241,
+      "quality": "SAM mask accepted by center-distance and area checks; visually reviewed.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": false
+    },
+    {
+      "sourceFrame": 2679,
+      "sourceTime": 89.3893,
+      "clipTime": 8.575233333333333,
+      "clipFrame": 257,
+      "roiGuideCenter": [
+        44,
+        342
+      ],
+      "roiGuideRadius": 42,
+      "roiGuideInterpolated": false,
+      "manualCenter": [
+        44,
+        342
+      ],
+      "manualRadius": 42,
+      "crop": [
+        0,
+        216,
+        170,
+        468
+      ],
+      "algorithm": "SAM3.1 MLX independent concept segmentation",
+      "prompt": "soccer ball",
+      "accepted": true,
+      "mask": "ball-masks/02679_ball.png",
+      "score": 0.8942088484764099,
+      "area": 2770,
+      "centroid": [
+        49.70252707581228,
+        345.14693140794225
+      ],
+      "areaToManualCircleRatio": 0.49984035415481864,
+      "quality": "Partly occluded, motion-blurred ball at the image edge; low confidence.",
+      "maskCoordinates": "Full1280x720source-image mask, restored from its processing crop.",
+      "centroidMeaning": "Centroid of the visible segmented pixels; not a calibrated physical ball center.",
+      "partialOcclusion": true
+    }
+  ],
+  "accepted": 35,
+  "attempted": 35,
+  "visual_review": "All35 source frames and contours visually inspected:34clear ball silhouettes near the strike and one partly occluded, blurred edge silhouette at2679. No advertising icon was accepted.",
+  "clip_frame_origin": 2422
+}

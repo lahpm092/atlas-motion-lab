@@ -1,0 +1,16 @@
+{
+  "engine": "Blender Cycles",
+  "device": "Mac Studio / Metal",
+  "samples": 32,
+  "frames": 240,
+  "fps": 24,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "duration": 10,
+  "decodePass": true,
+  "sha256": "5f2185b9faf4350c9d776fbad38018ad1bd6765dc83edd056568b3116e07b693",
+  "bytes": 2592863,
+  "physicsTiming": "film-timing.json"
+}

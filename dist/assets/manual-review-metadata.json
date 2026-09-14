@@ -1,0 +1,50 @@
+{
+  "file": "atlas-motion-assets/processing/deliverable/manual-review.mp4",
+  "width": 1280,
+  "height": 760,
+  "fps": 24,
+  "duration_seconds": 7,
+  "output_frames": 168,
+  "unique_source_frames": [
+    2655,
+    2656,
+    2657,
+    2658,
+    2659,
+    2660,
+    2661,
+    2662,
+    2663,
+    2664,
+    2665,
+    2666,
+    2667,
+    2668,
+    2669,
+    2670
+  ],
+  "source_sample_rate": "16 consecutive source frames at30000/1001 fps",
+  "display_cadence": "4 source frames/s with examination holds on2655,2662,2670",
+  "audio": false,
+  "codec": "h264/yuv420p",
+  "source_video": "atlas-motion-assets/source/atlas-quinones-pachuca-2022-source.mp4",
+  "source_manual_annotations": "atlas-motion-assets/processing/qa/manual-strike-sequence.json",
+  "initial_estimates": "raw3d/{source_frame:05}.npz pred_keypoints_2d, original SAM3D output",
+  "after": "Same photographed frame and initial skeleton, with only available manual wrist/ankle2D targets substituted; remaining joints unchanged. This is a2D annotation review, not an invented body animation.",
+  "missing_targets": "Null/occluded joints preserve initial model and receive no reviewed marker.",
+  "contact_identity_correction": {
+    "source_frame": 2662,
+    "initial_right_wrist": [
+      603.4700927734375,
+      234.7887725830078
+    ],
+    "manual_right_wrist": [
+      545,
+      208
+    ]
+  },
+  "bytes": 544790,
+  "sha256": "543ad18538c7a38598202fc5ad162971181550f9eaa46736d0ce52be0d9a66ba",
+  "evidence_contact": "atlas-motion-assets/processing/deliverable/manual-review-contact.jpg",
+  "evidence_sheet": "atlas-motion-assets/processing/deliverable/manual-review-contact-sheet.jpg"
+}

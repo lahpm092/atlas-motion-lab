@@ -1,0 +1,13 @@
+*.pyc
+__pycache__/
+.DS_Store
+._*
+.env*
+.venv/
+pipeline/models/
+pipeline/source/*.mp4
+pipeline/processing/masks-v3/
+pipeline/processing/raw3d/
+pipeline/processing/overlays/
+pipeline/physics/output/
+pipeline/physics/blender/

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "source_frames": 342,
+  "accepted_player_masks_and_poses": 217,
+  "absent_player_records": 125,
+  "ball_masks": 35,
+  "manual_targets": 38,
+  "manual_frames": 16,
+  "gltf_bones": 127,
+  "gltf_pose_frames": 211,
+  "gltf_duration_seconds": 7.006999492645264,
+  "source_to_gltf_alignment": "Original 2500 = clip2.6026 = GLB0; original2662 = clip8.008 = GLB5.4054",
+  "bone_coordinate_comparisons": 1055,
+  "max_threejs_vs_exported_rig_error_model_m": 2.9024921646691323e-05,
+  "rig_check_scope": "Implementation consistency only, not independent physical accuracy",
+  "geometry_checks": [
+    "90 and180 degree internal angles",
+    "null on degenerate or nonfinite geometry",
+    "projected ball departure17.895 degrees"
+  ],
+  "media": "All6 films verified for expected frame counts,dimensions,fps,H264/yuv420p; final Blender film and comparison fully decoded and visually inspected",
+  "browser_qa_performed": false
+}

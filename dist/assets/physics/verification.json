@@ -1,0 +1,60 @@
+{
+  "engine": "MuJoCo",
+  "version": "3.13.0",
+  "backend": "CPU",
+  "timestep": 0.0001,
+  "gravity": [
+    0,
+    0,
+    -9.81
+  ],
+  "ballMass": 0.43,
+  "ballRadius": 0.11,
+  "support": "Right boot welded to the ground; articulated dynamic body, torque-limited position servos.",
+  "ballActuation": "None. Initial ball velocity is zero. Motion comes only from gravity and contacts.",
+  "firstBootContact": 0.6407999999999457,
+  "lastBootContact": 0.6419999999999456,
+  "bootImpulse": 6.377251593,
+  "maxBootPenetration": 0,
+  "maxContactPenetration": 0,
+  "minBallGroundClearance": 0.0015396386448602722,
+  "peakBallSpeed": 10.986490995571849,
+  "goal": {
+    "t": 1.916732824212913,
+    "center": [
+      12.0,
+      0.05692001787051275,
+      0.11199999952606347
+    ],
+    "inside": true
+  },
+  "elapsed": 1.6535586999962106,
+  "parameters": {
+    "ball_x": 0.28,
+    "ball_z": 0.112,
+    "hip": -0.8,
+    "knee": 0.08,
+    "ankle": -0.4,
+    "swing": 0.16,
+    "seconds": 4,
+    "export": true
+  },
+  "realism": "Constrained reconstruction of a left-footed kick, not measured forces or physical timing of Quinones.",
+  "frameCount": 1371,
+  "sampleInterval": 0.0083,
+  "maxPenetrationPair": null,
+  "launch": {
+    "t": 0.6420999999999456,
+    "v": [
+      9.995291038746066,
+      -0.04753291777322221,
+      4.548444424505222
+    ],
+    "speed": 10.981641453367619,
+    "elevation": 24.468078537415664
+  },
+  "pelvisHeightRange": [
+    0.926623,
+    0.928196
+  ]
+}

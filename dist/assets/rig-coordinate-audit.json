@@ -1,0 +1,7 @@
+{
+  "frames_checked": 211,
+  "joint_comparisons": 4009,
+  "max_coordinate_delta_m": 1.000000000139778e-06,
+  "expected_transform": "Blender (x,y,z) -> glTF (x,z,-y)",
+  "scope": "Consistency of analytical JSON exports, not independent physical accuracy."
+}

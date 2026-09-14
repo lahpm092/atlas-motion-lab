@@ -1,0 +1,17 @@
+{
+  "source": "https://www.youtube.com/watch?v=y4dl3bDOxYI",
+  "rows": 342,
+  "rig": "humanoid.glb, corrected MHR 127-bone animation",
+  "timebase": "sourceFrame at 30000/1001 fps; clip starts at original frame 2422",
+  "coordinate_system": "glTF model: Y up, X and Z horizontal; pelvis centered; metres derive from inferred MHR scale and are not field calibrated",
+  "left_knee_2d": "acos normalized dot product hip-knee and ankle-knee, image projection",
+  "left_knee_rig3d": "same internal angle from the actual corrected GLB bones MHR_002,003,004",
+  "ankle_elevation": "atan2(deltaY, hypot(deltaX,deltaZ)); displacement over exactly 3 replay frames =0.1001 s; absent where the full future window is unavailable",
+  "interpolation": "202 observed poses and 9 short-gap interpolated frames in source 2500–2710; other source frames have no rig measurements",
+  "ball_centroids": "SAM 3.1 visible segmented pixels, not inferred physical sphere centres",
+  "limits": [
+    "Replay already slow motion; no physical velocities.",
+    "Monocular depth and scale are estimates.",
+    "Session-only 2D edits are not included in this baseline export."
+  ]
+}

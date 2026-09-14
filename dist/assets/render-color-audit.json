@@ -1,0 +1,13 @@
+{
+  "frames_checked": 240,
+  "floor_probe_rectangle": [
+    60,
+    680,
+    64,
+    64
+  ],
+  "minimum_mean_rgb": 191.33333333333334,
+  "maximum_mean_rgb": 214.0,
+  "failed_frames": [],
+  "scope": "Checks the empty floor for the black-material GPU cache failure; visual contact sheets separately inspect body, ball and framing."
+}

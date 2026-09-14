@@ -1,0 +1,28 @@
+{
+  "algorithm": "SAM 3.1 MLX concept detector, independent inference per analysed frame",
+  "checkpoint": "local 4-bit affine conversion of mlx-community/sam3.1-bf16",
+  "prompt": "person",
+  "source": "https://www.youtube.com/watch?v=y4dl3bDOxYI",
+  "source_fps": 29.97002997002997,
+  "source_dimensions": [
+    1280,
+    720
+  ],
+  "source_start": 80.8,
+  "source_end": 92.2,
+  "stride": 1,
+  "sample_hz": 29.97002997002997,
+  "identity_rule": "Select largest saturated-red Atlas silhouette; reject saturated blue Pachuca pixels. Partial and occluded targets may be absent. Secondary proposals are not verified additional players.",
+  "mask_representation": "packbits row-major [H,W], npz",
+  "no_temporal_propagation": true,
+  "official_model": "https://github.com/facebookresearch/sam3/blob/main/RELEASE_SAM3p1.md",
+  "input_resolution": 384,
+  "output_mask_shape": [
+    720,
+    1280
+  ],
+  "frame_count": 342,
+  "visible_mask_frames": 217,
+  "quality_version": "atlas-red-blue-gate-v3",
+  "checkpoint_sha256": "c5734c98dbe1874256ef7cb8f1e9d640e3746f737b930dddd7b932f577f4ed4c"
+}

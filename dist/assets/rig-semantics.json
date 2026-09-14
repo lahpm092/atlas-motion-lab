@@ -1,0 +1,33 @@
+{
+  "schema": "atlas-mhr127-semantics-v1",
+  "verified_against": "SAM 3D Body head_pose.keypoint_mapping evaluated on original MHR rest vertices and skeleton",
+  "axes": "glTF / Three.js Y up; X image horizontal; Z inferred depth",
+  "focusBone": "MHR_001",
+  "rootMode": "pelvis-centred horizontal motion; inferred floor contact per frame; no measured field translation",
+  "jointMap": {
+    "root": "MHR_000",
+    "pelvis": "MHR_001",
+    "leftHip": "MHR_002",
+    "leftKnee": "MHR_003",
+    "leftAnkle": "MHR_004",
+    "leftToe": "MHR_008",
+    "rightHip": "MHR_018",
+    "rightKnee": "MHR_019",
+    "rightAnkle": "MHR_020",
+    "rightToe": "MHR_024",
+    "spineLower": "MHR_034",
+    "spineMid": "MHR_035",
+    "thorax": "MHR_036",
+    "shoulderBase": "MHR_037",
+    "rightShoulder": "MHR_039",
+    "rightElbow": "MHR_040",
+    "rightWrist": "MHR_041",
+    "leftShoulder": "MHR_075",
+    "leftElbow": "MHR_076",
+    "leftWrist": "MHR_077",
+    "neck": "MHR_110",
+    "head": "MHR_113",
+    "headTop": "MHR_126"
+  },
+  "velocityMeaning": "Derivative per second of broadcast replay; not real-time biomechanics. Scene/body root translation is removed."
+}
